@@ -11,8 +11,9 @@ stages:
     steps:
     - bash: echo Build FirstJob
     - bash: echo $(pipelinelevelvariable)
-      steps:
-      - bash: echo Build SecondJob
+  - job: SecondJob
+    steps:
+    - bash: echo Build SecondJob
 - stage: DevDeploy
   variables:
     environment: Dev
