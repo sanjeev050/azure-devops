@@ -10,8 +10,8 @@ provider "azurerm" {
 
 resource "azurerm_kubernetes_cluster" "terraform-k8s" {
   name                = "${var.cluster_name}_${var.environment}"
-  location            = azurerm_resource_group.resource_group.location
-  resource_group_name = azurerm_resource_group.resource_group.name
+  location            = terraform-backend-resource-group.location
+  resource_group_name = terraform-backend-resource-group.name
   dns_prefix          = var.dns_prefix
 
   linux_profile {
