@@ -23,7 +23,7 @@ steps:
     backendAzureRmResourceGroupLocation: 'westeurope'
     backendAzureRmStorageAccountName: 'storagesanjeevn'
     backendAzureRmContainerName: 'storagesanjeevn-c'
-    backendAzureRmKey: 'kubernetes-dev.tf'
+    backendAzureRmKey: 'kubernete-dev.tf'
     allowTelemetryCollection: true'
 
 - task: TerraformCLI@0
