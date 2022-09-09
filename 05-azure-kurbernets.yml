@@ -28,7 +28,7 @@ steps:
 
 - task: TerraformCLI@0
   inputs:
-    command: 'destory'
+    command: 'destroy'
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
     environmentServiceName: 'azure-service-managing-connection'
     runAzLogin: true
